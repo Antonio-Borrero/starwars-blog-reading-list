@@ -1,0 +1,141 @@
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar styles */
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    margin-bottom: 3rem;
+}
+
+.navbar button {
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background: none;
+    color: #fff;
+    text-shadow: 1px 1px 4px #fff;
+}
+
+/* Body styles */
+
+h2 {
+    font-size: 1.5rem;
+    margin: 3rem 5rem 0 5rem;
+    color: #fff;
+    border-bottom: #666 solid 1px;
+    padding-bottom: 2rem;
+    
+}
+
+.Loading {
+    display: flex;
+    margin-left: 8rem;
+    align-items: center;
+    color: #fff;
+}
+
+/* Card styles */
+
+.CardList {
+  display: flex;
+  overflow-x: auto;
+  padding: 2rem 1rem;
+  list-style: none;
+  gap: 1rem;
+}
+
+.card {
+    width: 15rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+.card-title {
+    margin-bottom: 2rem;
+}
+
+.CardButton {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.CardButton:hover {
+    color: #000;
+    box-shadow: 0px 0px 8px #000;
+    text-shadow: 0 0 4px #fff;
+}
+
+.heartButton {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.heartButton:hover {
+    text-shadow: 0 0 4px #ccc;
+}
+
+.CardList::-webkit-scrollbar {
+  height: 0.5rem;                      
+}
+
+.CardList::-webkit-scrollbar-thumb {
+  background: #333;                 
+  border-radius: 10px;
+}
+
+/* Card info styles */
+
+.cardInfo {
+    width: 50vw;
+    margin: auto;
+}
+
+.cardInfo:hover {
+    transform: none;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    border-top: 1px solid #666;
+}
+
+.card-footer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid #666;
+    padding-left: 1rem;
+}
+
+.card-footer span:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+

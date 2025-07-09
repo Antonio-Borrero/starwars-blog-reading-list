@@ -1,3 +1,5 @@
+import { Favorites } from "./components/Favorites";
+
 export const initialStore=()=>{
   return{
     message: null,
@@ -12,7 +14,13 @@ export const initialStore=()=>{
         title: "Do my homework",
         background: null,
       }
-    ]
+    ],
+    People: [],
+    Planets: [],
+    Vehicles: [],
+    peopleFavorites: [],
+    planetsFavorites: [],
+    vehiclesFavorites: [],
   }
 }
 
@@ -26,6 +34,76 @@ export default function storeReducer(store, action = {}) {
         ...store,
         todos: store.todos.map((todo) => (todo.id === id ? { ...todo, background: color } : todo))
       };
+
+    case "people":
+
+    const { personajes } = action.payload
+
+    return {
+      ...store,
+      People: personajes
+    };
+
+    case "planets":
+
+    const { planetas } = action.payload
+
+    return {
+      ...store,
+      Planets: planetas
+    };
+
+    case "vehicles":
+
+    const { vehiculos } = action.payload
+
+    return {
+      ...store,
+      Vehicles: vehiculos
+    };
+    
+    case "peopleFavorites":
+      
+    return {
+      ...store,
+      peopleFavorites: [ ...store.peopleFavorites, action.payload ]
+    }
+
+    case "vehiclesFavorites":
+      
+    return {
+      ...store,
+      vehiclesFavorites: [ ...store.vehiclesFavorites, action.payload ]
+    }
+
+    case "planetsFavorites":
+      
+    return {
+      ...store,
+      planetsFavorites: [ ...store.planetsFavorites, action.payload ]
+    }
+
+    case "peopleDeleteFavorites":
+      
+    return {
+      ...store,
+      peopleFavorites: [ ...store.peopleFavorites.filter(item => item.name !== action.payload.name) ]
+    }
+
+    case "vehiclesDeleteFavorites":
+      
+    return {
+      ...store,
+      vehiclesFavorites: [ ...store.peopleFavorites.filter(item => item.name !== action.payload.name) ]
+    }
+
+    case "planetsDeleteFavorites":
+      
+    return {
+      ...store,
+      planetsFavorites: [ ...store.peopleFavorites.filter(item => item.name !== action.payload.name) ]
+    }
+
     default:
       throw Error('Unknown action.');
   }    
