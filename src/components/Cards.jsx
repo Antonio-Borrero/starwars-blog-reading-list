@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 
-export const Card = ({ item, type, link}) => {
+export const Card = ({ item, type, link }) => {
 
     const { store, dispatch } = useGlobalReducer();
 
@@ -14,14 +14,24 @@ export const Card = ({ item, type, link}) => {
                     <Link to={`/${link}Info/${item.uid}`}>
                         <button className="CardButton">Learn more!</button>
                     </Link>
-                    <button className='heartButton' onClick={() => {
-                        dispatch({
-                            type: `${type}Favorites`,
-                            payload: item
-                        });
-                    }}>
-                        <i className="fa-solid fa-heart"></i>
-                    </button>
+                    <div>
+                        <button className="heartButton" onClick={() => {
+                            dispatch({
+                                type: `${type}Favorites`,
+                                payload: item
+                            });
+                        }}>
+                            <i className="fa-solid fa-heart"></i>
+                        </button>
+                        <button className="thrashButton" onClick={() => {
+                            dispatch({
+                                type: `${type}DeleteFavorites`,
+                                payload: item,
+                            });
+                        }}>
+                            <i className="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

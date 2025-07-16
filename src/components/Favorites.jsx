@@ -15,7 +15,7 @@ export const Favorites = ({ item }) => {
                     ) : (
                         store.peopleFavorites.map((item, index) => (
                             <li key={index}>
-                                <Card item={item} type="peopleDelete" link="people"/>
+                                <Card item={item} type="people" link="people"/>
                             </li>
                         ))
                     )}
@@ -29,7 +29,7 @@ export const Favorites = ({ item }) => {
                     ) : (
                         store.planetsFavorites.map((item, index) => (
                             <li key={index}>
-                                <Card item={item} type="planetsDelete" link="planets"/>
+                                <Card item={item} type="planets" link="planets"/>
                             </li>
                         ))
                     )}
@@ -43,7 +43,7 @@ export const Favorites = ({ item }) => {
                     ) : (
                         store.vehiclesFavorites.map((item, index) => (
                             <li key={index}>
-                                <Card item={item} type="vehicleDelete" link="vehicles"/>
+                                <Card item={item} type="vehicles" link="vehicles"/>
                             </li>
                         ))
                     )}

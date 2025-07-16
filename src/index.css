@@ -16,17 +16,76 @@ body {
     margin-bottom: 3rem;
 }
 
-.navbar button {
+.btn-home {
     background: none;
     color: #fff;
-    border: none;
+    border: #fff 1px solid;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .navbar button:hover {
     background: none;
     color: #fff;
     text-shadow: 1px 1px 4px #fff;
+}
+
+.btn-group .btn {
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+}
+
+.btn-group .btn:first-child {          
+  border-radius: 10px 0 0 10px; 
+}
+
+.btn-group .dropdown-toggle {
+  border-left: none;            
+  border-radius: 0 10px 10px 0; 
+}
+
+.dropdown-menu {
+    background-color: #222;
+    border: none;
+}
+
+.dropdown-menu li {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #666 solid 1px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.deleteFavorite {
+    background: none;
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+}
+
+.deleteFavorite:hover,
+.deleteFavorite:focus {
+    background: none;
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
 }
 
 /* Body styles */
@@ -88,6 +147,16 @@ h2 {
     text-shadow: 0 0 4px #fff;
 }
 
+.favoriteHeartButton {
+    background: none;
+    border: none;
+    color: #f00;
+}
+
+.favoriteHeartButton:hover {
+    text-shadow: 0 0 4px #c00;
+}
+
 .heartButton {
     background: none;
     border: none;
@@ -96,6 +165,12 @@ h2 {
 
 .heartButton:hover {
     text-shadow: 0 0 4px #ccc;
+}
+
+.thrashButton, .thrashButton:hover, .thrashButton:focus {
+    background: none;
+    border: none;
+    color: #fff;
 }
 
 .CardList::-webkit-scrollbar {
