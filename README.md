@@ -1,3 +1,5 @@
+English | [Español](README.es.md)
+
 # Star Wars blog reading list
 
 [![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
