@@ -17,7 +17,9 @@ Interactive dashboard that consumes the Star Wars API (SWAPI) to display informa
 
 ## Preview
 
+![Project Preview](./screenshots/preview.png)
 
+<br>
 
 ## Technologies
 
