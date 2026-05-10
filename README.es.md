@@ -1,73 +1,73 @@
-# Plantilla WebApp con React JS
+Español | [English](README.md)
 
-> 🎥 Esta plantilla [cuenta con un video tutorial](https://youtu.be/9blWKQTJ1FA), para verlo haz clic aquí.
+# Star Wars blog reading list
 
-Utilizada por [4Geeks.com](https://4geeks.com/) y los estudiantes de [4Geeks Academy](https://4geeksacademy.com/), esta plantilla ayuda a iniciar tus primeras aplicaciones web multi-página integrándose con la última versión de React, React-Router, despliegues en Vercel y [Vite](https://4geeks.com/es/lesson/introduccion-a-vite-como-empaquetador-de-modulos) para el empaquetado.
+[![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![SWAPI](https://img.shields.io/badge/API-SWAPI-yellow?logo=starwars&logoColor=black)](https://swapi.dev/)
 
-### Empezando:
+<br>
 
-> 📦 Asegúrate de usar al menos la versión 20 de Node.
+> **⚠️ Nota:** Este es un proyecto de aprendizaje antiguo (legacy) desarrollado durante mis primeros meses de desarrollo web como parte del bootcamp de Full Stack Developer en 4Geeks Academy. Lo mantengo como referencia de mi evolución técnica y mis inicios en el consumo de APIs y gestión de estados.
 
-1. Instala las dependencias del paquete node escribiendo: `$ npm install`
+<br>
 
-2. Crea un archivo .env basado en el .env.example escribiendo `$ cp .env.example .env`
+Panel interactivo que consume la API de Star Wars (SWAPI) para mostrar información sobre personajes, planetas y vehículos, incluyendo un sistema de gestión de favoritos.
 
-3. ¡Comienza a programar! y el servidor de desarrollo de vite con recarga en vivo escribiendo: `$ npm run start`
+<br>
 
-### Estilos
+## Vista Previa
 
-Puedes actualizar el archivo `./index.css` o crear nuevos archivos `.css` e importarlos en tus archivos css o js actuales según tus necesidades.
+![Project Preview](./screenshots/preview.png)
 
-### Componentes
+<br>
 
-Agrega más archivos en tu carpeta `./src/components` según los necesites e impórtalos en tus paginas actuales según sea necesario.
+## Tecnologías
 
-### Páginas
+- React.js 18.2
+- JavaScript (ES6+)
+- Vanilla CSS (Estilos personalizados)
+- Context API & useReducer
+- SWAPI (Star Wars API)
 
-Agrega más archivos en tu carpeta `./js/pages` e impórtalos en `./routes.jsx`.
-Cada página debe coincidir con al menos una ruta dentro de `routes.jsx`
+<br>
 
-### Almacenamiento Centralizado con useReducer
+## Instalación
 
-Esta plantilla viene con un estado general y centralizado que se comparte con todas las páginas y componentes, lo llamamos "store".
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Antonio-Borrero/starwars-blog-reading-list.git
+   ```
+   
+2. Instalar las dependencias:
+   ```bash
+   npm install
+   ```
 
-El archivo `./src/store.js` tiene una estructura predeterminada para el store, te animamos a cambiarla y adaptarla a tus necesidades de datos (por ejemplo, si estás haciendo una `Lista de tareas` probablemente tendrás un arreglo de tareas aquí).
+3. Ejecutar la aplicación en modo desarrollo:
+   ```bash
+   npm run start
+   ```
 
-💡Nota: Hay un ejemplo usando el store y dispatcher de useReducer en el archivo `pages/demo.js`;
+4. Abrir [http://localhost:3000](http://localhost:3000) en el navegador:
 
-+ Entiende [como funciona el `useReducer`](https://4geeks.com/es/lesson/que-es-usereducer-react)
-+ Lee más sobre [implementar un estado global con API de Contexto](https://4geeks.com/es/lesson/context-api-es)
-+ Lee más sobre [hooks de react](https://4geeks.com/es/lesson/react-hooks-explained-es)
+   - La aplicación se recargará automáticamente al modificar cualquier archivo.
 
-El `Proveedor` del store para este contexto ya está configurado en `./src/main.jsx`. Puedes acceder al store desde cualquier componente usando el hook `useGlobalReducer` para obtener el `store` y el `despachador`. Consulta `/views/demo.js` para ver una demostración. Aquí tienes un ejemplo más pequeño:
+<br>
 
-```jsx
-import useGlobalReducer from "./src/hooks/useGlobalReducer";
+## Características
 
-const MyComponentSuper = () => {
-  //aquí usas el hook para obtener el despachador y el almacén
-  import { dispatch, store } = useGlobalReducer();
+- **Explorador Multicategoría:** Consumo dinámico y visualización de Personajes, Planetas y Vehículos.
+- **Gestión Global de Favoritos:** Sistema para añadir y eliminar elementos de una lista de favoritos accesible desde cualquier parte de la aplicación.
+- **Contador de Favoritos en Tiempo Real:** Contador dinámico en la barra de navegación que se actualiza instantáneamente.
+- **Vista de detalles:** Rutas dinámicas específicas para explorar información extendida de cada entidad de Star Wars.
+- **Operaciones CRUD:** Lógica funcional para manejar la interacción de datos (Me gusta / Eliminar / Ver) mediante estado global.
 
-  return <div>{/* puedes usar tus acciones o el almacén dentro del html */}</div>
-}
-```
+<br>
 
-## ¡Publica tu sitio web!
+## Resultados de Aprendizaje
 
-1. **Vercel:** El proveedor de alojamiento GRATUITO recomendado es [vercel.com](https://vercel.com/), puedes desplegar en 1 minuto escribiendo los siguientes 2 comandos:
-
-Iniciar sesión (necesitas tener una cuenta):
-```sh
-$ npm i vercel -g && vercel login
-```
-Desplegar:
-```sh
-$ vercel --prod
-```
-✎ Nota: Si no tienes una cuenta, simplemente ve a vercel.com, crea una cuenta y regresa aquí.
-
-![Procedimiento de ejemplo de Vercel para desplegar](https://github.com/4GeeksAcademy/react-hello-webapp/blob/4b530ba091a981d3916cc6e960e370decaf2e234/docs/deploy.png?raw=true)
-
-## Contribuidores
-
-Esta plantilla fue construida como parte del [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) de 4Geeks Academy por [Alejandro Sanchez](https://twitter.com/alesanchezr) y muchos otros contribuidores. Descubre más sobre nuestro [Curso de Desarrollador Full Stack](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), [Curso de data-science](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning) y [Curso de Ciberseguridad](https://4geeksacademy.com/es/coding-bootcamps/curso-ciberseguridad).
+- **Arquitectura de Gestión de Estado:** Implementación de un patrón de "Store" escalable utilizando useContext y useReducer para manejar el estado global.
+- **Manejo de Datos Asíncronos:** Experiencia en la gestión de respuestas de API complejas, manejo de estados de carga y mapeo de datos a componentes dinámicos.
+- **Interfaz Declarativa y Enrutamiento:** Dominio de la naturaleza declarativa de React para sincronizar la interfaz de usuario con el estado y uso de React Router para una experiencia SPA (Single Page Application) fluida.
