@@ -13,16 +13,13 @@ Español | [English](README.md)
 
 <br>
 
-Panel interactivo que consume la API de Star Wars (SWAPI) para mostrar información sobre personajes, planetas y vehículos, incluyendo un sistema de gestión de favoritos.
-
-<br>
-
-## Vista Previa
-
 ![Project Preview](./screenshots/preview.png)
 
 <br>
 
+Panel interactivo que consume la API de Star Wars (SWAPI) para mostrar información sobre personajes, planetas y vehículos, incluyendo un sistema de gestión de favoritos.
+
+<br>
 
 ## Características
 
