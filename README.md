@@ -7,9 +7,11 @@ English | [Español](README.es.md)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![SWAPI](https://img.shields.io/badge/API-SWAPI-yellow?logo=starwars&logoColor=black)](https://swapi.dev/)
 
+> **⚠️ Note:** This is a legacy learning project built during my first months of web development as part of the **4Geeks Academy** Full Stack Developer bootcamp. I keep it here as a reference of my technical evolution and my beginnings with API consumption and state management.
+
 <br>
 
-> **⚠️ Note:** This is a legacy learning project built during my first months of web development as part of the **4Geeks Academy** Full Stack Developer bootcamp. I keep it here as a reference of my technical evolution and my beginnings with API consumption and state management.
+![Project Preview](./screenshots/preview.png)
 
 <br>
 
@@ -17,9 +19,13 @@ Interactive dashboard that consumes the Star Wars API (SWAPI) to display informa
 
 <br>
 
-## Preview
+## Features
 
-![Project Preview](./screenshots/preview.png)
+- **Multi-Category Explorer:** Dynamic fetching and display of Characters, Planets, and Vehicles.
+- **Global Favorites Management:** Add and remove items from a favorites list that is accessible from any part of the app.
+- **Real-time Favorites Counter:** A dynamic counter in the navigation bar that updates instantly.
+- **Detailed Views:** Specific dynamic routes to explore extended information for each Star Wars entity.
+- **CRUD Operations:** Functional logic to handle data interaction (Like/Delete/View) via global state.
 
 <br>
 
@@ -53,16 +59,6 @@ Interactive dashboard that consumes the Star Wars API (SWAPI) to display informa
 4. Open [http://localhost:3000](http://localhost:3000) on the browser:
 
    - The app will automatically reload when any file is modified
-
-<br>
-
-## Features
-
-- **Multi-Category Explorer:** Dynamic fetching and display of Characters, Planets, and Vehicles.
-- **Global Favorites Management:** Add and remove items from a favorites list that is accessible from any part of the app.
-- **Real-time Favorites Counter:** A dynamic counter in the navigation bar that updates instantly.
-- **Detailed Views:** Specific dynamic routes to explore extended information for each Star Wars entity.
-- **CRUD Operations:** Functional logic to handle data interaction (Like/Delete/View) via global state.
 
 <br>
 
