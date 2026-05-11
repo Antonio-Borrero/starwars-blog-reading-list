@@ -23,6 +23,17 @@ Panel interactivo que consume la API de Star Wars (SWAPI) para mostrar informaci
 
 <br>
 
+
+## Características
+
+- **Explorador Multicategoría:** Consumo dinámico y visualización de Personajes, Planetas y Vehículos.
+- **Gestión Global de Favoritos:** Sistema para añadir y eliminar elementos de una lista de favoritos accesible desde cualquier parte de la aplicación.
+- **Contador de Favoritos en Tiempo Real:** Contador dinámico en la barra de navegación que se actualiza instantáneamente.
+- **Vista de detalles:** Rutas dinámicas específicas para explorar información extendida de cada entidad de Star Wars.
+- **Operaciones CRUD:** Lógica funcional para manejar la interacción de datos (Me gusta / Eliminar / Ver) mediante estado global.
+
+<br>
+
 ## Tecnologías
 
 - React.js 18.2
@@ -53,16 +64,6 @@ Panel interactivo que consume la API de Star Wars (SWAPI) para mostrar informaci
 4. Abrir [http://localhost:3000](http://localhost:3000) en el navegador:
 
    - La aplicación se recargará automáticamente al modificar cualquier archivo.
-
-<br>
-
-## Características
-
-- **Explorador Multicategoría:** Consumo dinámico y visualización de Personajes, Planetas y Vehículos.
-- **Gestión Global de Favoritos:** Sistema para añadir y eliminar elementos de una lista de favoritos accesible desde cualquier parte de la aplicación.
-- **Contador de Favoritos en Tiempo Real:** Contador dinámico en la barra de navegación que se actualiza instantáneamente.
-- **Vista de detalles:** Rutas dinámicas específicas para explorar información extendida de cada entidad de Star Wars.
-- **Operaciones CRUD:** Lógica funcional para manejar la interacción de datos (Me gusta / Eliminar / Ver) mediante estado global.
 
 <br>
 
